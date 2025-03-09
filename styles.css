@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   font-weight: 400;
 
@@ -26,68 +26,20 @@ p {
   margin-bottom: 1.5em;
 }
 
-.bg-pink {
-  background-color: palevioletred;
-}
-
-.bg-blue {
-  background-color: cornflowerblue;
-}
-
 .flex {
   display: flex;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
-.w-10 {
-  width: 10%;
-}
-
-.w-15 {
-  width: 15%;
-}
-
-.w-20 {
-  width: 20%;
-}
-
-.w-max {
-  width: 100%;
-}
-
 .h-max {
   height: 100vh;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.overflow-scroll {
-  overflow-y: scroll;
-}
-
-.maxh-screen {
-  max-height: 100vmax;
+.text-center {
+  text-align: center;
 }
 
 .m-auto {
@@ -95,14 +47,6 @@ p {
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.p-1 {
-  padding: 10px;
 }
 
 .text-sm {
@@ -117,7 +61,7 @@ p {
   font-family: monospace;
 }
 
-.about-me {
+.content {
   max-width: 800px;
   text-align: left;
 }
