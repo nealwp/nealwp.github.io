@@ -15,12 +15,15 @@
   </head>
 
   <body>
-    <div class="flex flex-col h-max">
-      <div class="m-auto text-center">
-        <img src="/hedgehog-noborder.svg" height="300" width="200" />
-        <h1>Preston Neal</h1>
-        <h2>Software Engineer</h2>
-        <section class="content">
+    <div class="container">
+      <header class="sidebar">
+        <div class="logo">
+          <img src="/hedgehog-noborder.svg" />
+          <span>prestonneal.com</span>
+        </div>
+      </header>
+      <main class="content">
+        <section>
           <h3>About Me</h3>
           <p>Three words to describe me: "Gets things done."</p>
           <p>
@@ -66,11 +69,9 @@
             Marine Corps veteran with an inactive Secret security clearance.
           </p>
         </section>
-        <p class="text-sm gray">Version <span id="version">v0.0.1</span></p>
-        <p class="font-mono text-sm gray">
-          Site Visits: <span id="site-visits">3,498</span>
-        </p>
-      </div>
+      </main>
     </div>
+    <p class="text-sm gray">Version <span>v0.0.1</span></p>
+    <p class="font-mono text-sm gray">Site Visits: <span>3,498</span></p>
   </body>
 </html>
