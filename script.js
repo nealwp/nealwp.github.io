@@ -25,7 +25,7 @@
       try {
         localStorage.setItem(STORAGE_KEY, next);
       } catch (e) {
-        /* localStorage unavailable — preference just won't persist */
+        /* localStorage unavailable, preference just won't persist */
       }
     });
   }

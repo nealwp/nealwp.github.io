@@ -1,6 +1,6 @@
 # nealwp.github.io
 
-Source for [prestonneal.com](https://nealwp.github.io/) — my personal site.
+Source for [prestonneal.com](https://nealwp.github.io/), my personal site.
 
 Static HTML/CSS with a small amount of vanilla JavaScript for the light/dark
 theme toggle. No build step, no framework, no dependencies. It's served
@@ -37,11 +37,11 @@ root directly at `https://nealwp.github.io/`.
 
 `favicon.svg`, `assets/favicon-32.png`, `assets/favicon-192.png`,
 `assets/apple-touch-icon.png`, and `assets/og-image.png` are generated from
-the hedgehog mark. They're committed as static files — there's no build step
+the hedgehog mark. They're committed as static files; there's no build step
 that produces them at deploy time. If the mark changes, regenerate them with
 an SVG rasterizer of your choice (e.g. `sharp`, `resvg`, or Inkscape) at:
 
-- `favicon-32.png` — 32×32
-- `favicon-192.png` — 192×192
-- `apple-touch-icon.png` — 180×180
-- `og-image.png` — 1200×630
+- `favicon-32.png` (32×32)
+- `favicon-192.png` (192×192)
+- `apple-touch-icon.png` (180×180)
+- `og-image.png` (1200×630)
