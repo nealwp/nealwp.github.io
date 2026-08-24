@@ -655,7 +655,7 @@ main section h2 {
   .hero-photo {
     grid-area: 1 / 2 / 3 / 3;
     width: min(100%, 15rem);
-    justify-self: start;
+    justify-self: center;
   }
 
   .hero-links {
