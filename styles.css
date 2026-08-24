@@ -45,6 +45,7 @@
   /* --- Radius (restrained) --- */
   --radius-sm: 3px;
   --radius-md: 6px;
+  --radius-lg: 10px;
 
   --header-height: 4rem;
 }
@@ -309,6 +310,18 @@ svg {
   color: var(--text-muted);
   font-size: 1.0625rem;
   max-width: 46ch;
+}
+
+.hero-photo {
+  display: block;
+  width: min(55vw, 13.75rem);
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  margin-bottom: var(--space-6);
 }
 
 .hero-links {
@@ -634,18 +647,24 @@ main section h2 {
   }
 
   .hero-sub {
-    grid-area: 1 / 2 / 3 / 3;
-    align-self: end;
+    grid-area: 3 / 2;
     margin-bottom: 0;
+    align-self: start;
+  }
+
+  .hero-photo {
+    grid-area: 1 / 2 / 3 / 3;
+    width: min(100%, 15rem);
+    justify-self: start;
   }
 
   .hero-links {
-    grid-area: 3 / 2;
+    grid-area: 4 / 2;
     justify-content: flex-start;
   }
 
   .hero-status {
-    grid-area: 4 / 2;
+    grid-area: 5 / 2;
     margin-top: var(--space-4);
   }
 
