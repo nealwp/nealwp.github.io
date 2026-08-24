@@ -1,77 +1,360 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston Neal — Senior Software Engineer</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          /* localStorage/matchMedia unavailable — default styles apply */
+        }
+      })();
+    </script>
+    <meta
+      name="description"
+      content="Preston Neal is a senior software engineer building backend systems, developer tooling, and platforms. Based in San Diego, open to senior IC roles in backend, platform, and developer experience engineering."
+    />
+    <link rel="canonical" href="https://nealwp.github.io/" />
+
+    <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121210" media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nealwp.github.io/" />
+    <meta property="og:title" content="Preston Neal — Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="Senior software engineer building backend systems, developer tooling, and platforms. Based in San Diego, open to senior IC roles."
+    />
+    <meta property="og:image" content="https://nealwp.github.io/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Preston Neal — Senior Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Senior software engineer building backend systems, developer tooling, and platforms."
+    />
+    <meta name="twitter:image" content="https://nealwp.github.io/assets/og-image.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/hedgehog-noborder.svg" />
     <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preston Neal - Software Engineer</title>
   </head>
 
   <body>
-    <div class="container">
-      <header class="sidebar">
-        <div class="logo">
-          <img src="/hedgehog-noborder.svg" />
-          <span>prestonneal.com</span>
-        </div>
-      </header>
-      <main class="content">
-        <section>
-          <h3>About Me</h3>
-          <p>Three words to describe me: "Gets things done."</p>
-          <p>
-            Why I’m here: I became a software engineer because I love to solve
-            tough problems and create business value, and software engineering
-            presents tons of opportunities to do just that. I’m product-first
-            and team-oriented, and I believe the best products are built by
-            motivated, self-organizing teams. I work hard, I’m results-driven,
-            and I prioritize outcomes over outputs.
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="#top" aria-label="Preston Neal, back to top">
+          <span class="brand-mark"><svg viewBox="0 0 1244 1196" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g transform="matrix(0.12315168,0,0,-0.12315168,-139.5278,1338.7582)" fill="currentColor"><path d="m 6635,10382 c 28,-121 37,-217 39,-392 2,-177 -17,-577 -29,-588 -2,-2 -140,41 -307,96 -422,141 -584,185 -825,226 -111,19 -263,32 -263,22 0,-4 29,-62 64,-129 175,-336 248,-479 245,-482 -2,-1 -60,-6 -129,-9 -69,-4 -136,-9 -150,-11 -14,-2 -79,-7 -145,-10 -66,-4 -131,-8 -145,-10 -14,-2 -72,-6 -130,-10 -403,-24 -789,-100 -950,-186 -89,-48 -156,-100 -139,-109 8,-4 93,-31 189,-59 216,-62 279,-84 499,-168 137,-53 176,-72 184,-91 16,-35 1,-51 -83,-84 -124,-49 -700,-287 -780,-323 -162,-73 -447,-242 -494,-294 l -19,-21 h 111 c 89,0 144,-7 274,-34 249,-53 629,-145 663,-160 l 30,-13 -60,-38 c -33,-20 -76,-48 -95,-60 -19,-13 -111,-71 -205,-130 -434,-275 -737,-500 -870,-647 -42,-47 -148,-198 -142,-204 4,-4 122,-13 252,-19 72,-4 146,-8 165,-10 19,-2 103,-7 185,-11 83,-4 157,-8 165,-10 8,-1 31,-3 50,-3 l 35,-1 -23,-18 c -12,-9 -52,-33 -90,-52 -371,-190 -618,-329 -722,-406 -193,-141 -376,-372 -331,-417 13,-13 178,-12 303,2 108,12 315,13 383,1 72,-12 305,-80 305,-89 0,-4 -28,-13 -62,-20 -89,-18 -194,-64 -258,-113 -95,-72 -438,-385 -610,-558 -141,-140 -358,-387 -348,-395 2,-1 55,-6 118,-9 63,-4 151,-12 195,-17 97,-12 368,-58 373,-64 2,-2 -53,-74 -123,-160 -149,-184 -230,-305 -291,-432 -24,-50 -44,-94 -44,-98 0,-3 12,2 28,13 92,65 213,102 340,102 65,0 76,-3 98,-25 30,-30 26,-55 -16,-100 -76,-83 -137,-209 -169,-347 -21,-89 -38,-238 -27,-238 4,0 104,39 222,86 119,47 217,84 219,82 1,-1 -21,-133 -50,-293 -29,-159 -51,-294 -48,-298 3,-5 26,11 52,36 62,61 203,147 240,147 26,0 59,-20 62,-38 1,-4 3,-52 4,-107 7,-308 33,-515 71,-576 4,-7 24,6 48,29 59,56 101,85 183,126 73,37 254,109 259,103 4,-4 23,-159 30,-247 5,-68 -6,-204 -21,-242 -5,-13 18,-16 177,-20 163,-5 201,-10 348,-42 506,-113 1023,-189 1515,-225 124,-9 576,-6 655,4 532,70 779,124 942,206 202,102 278,205 249,339 -28,131 -105,217 -259,292 l -102,49 64,82 c 313,403 490,933 499,1498 l 2,139 53,11 c 360,74 707,331 861,636 59,119 83,223 85,368 1,178 -29,269 -128,373 -132,141 -241,122 -477,-81 -144,-124 -224,-171 -354,-212 l -77,-23 5,306 c 4,266 7,319 25,394 11,47 30,104 41,126 25,50 209,217 421,382 339,266 378,298 464,380 235,226 388,486 460,782 13,57 27,135 31,173 3,39 8,91 11,117 2,26 15,69 28,95 39,78 48,121 44,191 -11,182 -144,315 -313,316 -120,1 -180,-36 -283,-173 -34,-44 -139,-76 -252,-75 -96,1 -57,-12 -522,177 -169,69 -330,130 -358,137 -27,7 -50,15 -50,18 1,4 27,25 58,47 92,64 332,310 391,400 125,191 189,397 207,666 6,92 5,102 -8,89 -8,-8 -80,-85 -158,-170 -360,-389 -393,-422 -401,-408 -4,7 -10,45 -13,83 -38,405 -83,660 -144,814 l -26,65 -49,-55 c -74,-82 -146,-196 -244,-386 l -90,-173 -24,28 c -26,27 -86,104 -354,447 -226,289 -424,515 -452,515 -5,0 0,-42 12,-98 z M 7810,8256 c 177,-46 402,-124 570,-198 325,-145 365,-158 480,-158 36,0 108,9 160,20 89,18 95,18 104,2 5,-9 32,-40 61,-69 39,-37 68,-56 109,-69 l 57,-18 -7,-45 c -9,-69 -50,-231 -74,-292 -95,-242 -283,-450 -720,-795 -257,-202 -452,-363 -484,-398 -132,-143 -161,-309 -161,-929 0,-342 2,-399 15,-408 22,-15 258,-4 355,16 169,35 274,90 453,233 127,102 172,136 176,131 15,-17 37,-120 37,-172 0,-230 -161,-453 -446,-616 -136,-78 -285,-121 -470,-137 -44,-3 -81,-7 -82,-8 -1,-1 -5,-116 -8,-256 -3,-140 -7,-266 -9,-280 -2,-14 -7,-59 -11,-100 -19,-214 -83,-469 -163,-647 -103,-233 -236,-417 -462,-644 -85,-85 -184,-181 -220,-211 l -65,-56 210,1 c 173,1 222,-2 275,-17 86,-23 181,-71 216,-108 28,-28 28,-30 10,-43 -30,-23 -170,-73 -290,-105 -160,-43 -294,-67 -537,-96 -266,-33 -634,-41 -859,-19 -250,25 -570,72 -570,85 0,4 26,13 58,19 31,7 100,27 152,43 509,160 868,437 1073,828 183,349 316,889 358,1455 23,315 15,1114 -17,1505 -13,166 -81,947 -103,1175 -14,154 -13,412 3,525 52,370 254,713 507,863 60,36 68,38 124,33 33,-3 121,-21 195,-40 z"/><path d="m 7901,7889 c -85,-16 -140,-84 -156,-191 -9,-57 23,-164 58,-195 49,-45 126,-67 181,-52 83,23 156,128 156,225 0,98 -80,204 -165,217 -16,2 -50,0 -74,-4 z"/></g></svg></span>
+          <span class="brand-name">Preston Neal</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#engineering">Engineering</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Switch to dark theme"
+        >
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="currentColor" />
+            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+              <line x1="12" y1="1.5" x2="12" y2="4.5" />
+              <line x1="12" y1="19.5" x2="12" y2="22.5" />
+              <line x1="1.5" y1="12" x2="4.5" y2="12" />
+              <line x1="19.5" y1="12" x2="22.5" y2="12" />
+              <line x1="4.4" y1="4.4" x2="6.5" y2="6.5" />
+              <line x1="17.5" y1="17.5" x2="19.6" y2="19.6" />
+              <line x1="4.4" y1="19.6" x2="6.5" y2="17.5" />
+              <line x1="17.5" y1="6.5" x2="19.6" y2="4.4" />
+            </g>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <mask id="moon-mask">
+              <rect x="0" y="0" width="24" height="24" fill="#fff" />
+              <circle cx="15.5" cy="8.5" r="6.5" fill="#000" />
+            </mask>
+            <circle cx="12" cy="12" r="8.5" fill="currentColor" mask="url(#moon-mask)" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="wrap wrap--prose">
+          <h1>Preston Neal</h1>
+          <p class="hero-role">
+            Senior software engineer building backend systems and developer tooling that make
+            other engineers faster.
           </p>
-          <p>Here’s a few of the features you get when we work together:</p>
-          <ul>
+          <p class="hero-sub">
+            I like finding the ugly, repetitive problem nobody wants to own, and building the
+            tool that makes it disappear.
+          </p>
+          <ul class="hero-links">
+            <li><a href="https://github.com/nealwp">GitHub<span aria-hidden="true"> ↗</span></a></li>
             <li>
-              Expertise building TypeScript, Python, and Node.js applications
+              <a href="https://www.linkedin.com/in/nealwp2/"
+                >LinkedIn<span aria-hidden="true"> ↗</span></a
+              >
+            </li>
+            <li><a href="mailto:wprestonneal@outlook.com">Email</a></li>
+          </ul>
+          <p class="hero-status">
+            <span class="status-dot" aria-hidden="true"></span>Currently interested in senior
+            backend, platform, and developer-tooling roles.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="work">
+        <div class="wrap">
+          <h2>Selected work</h2>
+          <p class="section-intro">
+            A few projects worth a closer look, picked for what they solve rather than how they
+            look in a slideshow. The rest are on
+            <a href="https://github.com/nealwp">GitHub</a>.
+          </p>
+
+          <ol class="project-list">
+            <li class="project">
+              <span class="project-index" aria-hidden="true">01</span>
+              <div class="project-body">
+                <h3><a href="https://github.com/nealwp/spotme">spotme</a></h3>
+                <p>
+                  A command-line tool that keeps my Spotify library honest — finds unavailable and
+                  duplicate tracks across thousands of liked songs and drives playback from the
+                  terminal. Ships as a real package with a test suite that mocks the Spotify API,
+                  so tests run without credentials or network access.
+                </p>
+                <p class="project-meta">Python · pytest · GitHub Actions · PyPI</p>
+                <p class="project-links">
+                  <a href="https://github.com/nealwp/spotme">Source</a>
+                  <a href="https://pypi.org/project/spotme-cli/">Package</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">02</span>
+              <div class="project-body">
+                <h3><a href="https://github.com/nealwp/smodg">smodg</a></h3>
+                <p>
+                  Generates typed Sequelize models — table definitions, migrations, decorators —
+                  from a single TypeScript type. Built because hand-writing ORM boilerplate is a
+                  waste of a good afternoon.
+                </p>
+                <p class="project-meta">TypeScript · Jest · npm · GitHub Actions</p>
+                <p class="project-links">
+                  <a href="https://github.com/nealwp/smodg">Source</a>
+                  <a href="https://www.npmjs.com/package/smodg">Package</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">03</span>
+              <div class="project-body">
+                <h3><a href="https://github.com/nealwp/pdfcommentscraper2">pdfcommentscraper2</a></h3>
+                <p>
+                  Pulls annotations out of medical-record PDFs and turns them into chronological
+                  summaries — the kind of document-wrangling problem that otherwise eats a
+                  person's entire week.
+                </p>
+                <p class="project-meta">Python · pytest · GitHub Actions</p>
+                <p class="project-links">
+                  <a href="https://github.com/nealwp/pdfcommentscraper2">Source</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">04</span>
+              <div class="project-body">
+                <h3><a href="https://github.com/nealwp/callapitter">callapitter</a></h3>
+                <p>
+                  A terminal UI for composing, sending, and saving HTTP requests, for the times a
+                  full REST client is more than the job calls for.
+                </p>
+                <p class="project-meta">Go</p>
+                <p class="project-links">
+                  <a href="https://github.com/nealwp/callapitter">Source</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">05</span>
+              <div class="project-body">
+                <h3><a href="https://github.com/nealwp/yaml-check">yaml-check</a></h3>
+                <p>
+                  Validates Kubernetes manifest YAML before it reaches a cluster, catching the
+                  mistakes that otherwise get discovered during a deploy.
+                </p>
+                <p class="project-meta">Go</p>
+                <p class="project-links">
+                  <a href="https://github.com/nealwp/yaml-check">Source</a>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="engineering" class="engineering">
+        <div class="wrap wrap--prose">
+          <h2>Engineering</h2>
+          <p class="section-intro">The specific tools change. These don't.</p>
+
+          <h3>How I work</h3>
+          <dl class="principles">
+            <div class="principle">
+              <dt>Small over large</dt>
+              <dd>
+                A smaller system is easier to reason about, test, and hand off. I default to it
+                and need a reason to grow past it.
+              </dd>
+            </div>
+            <div class="principle">
+              <dt>Simple over clever</dt>
+              <dd>
+                Clever code is a liability the moment someone other than its author has to change
+                it — including me, six months later.
+              </dd>
+            </div>
+            <div class="principle">
+              <dt>Clear interfaces over clever internals</dt>
+              <dd>
+                I spend more design effort on what a function or service exposes than on how it
+                works inside.
+              </dd>
+            </div>
+            <div class="principle">
+              <dt>Tests that make change safe</dt>
+              <dd>
+                A test suite's job is to let me refactor with confidence, not to hit a coverage
+                number.
+              </dd>
+            </div>
+            <div class="principle">
+              <dt>Common sense over common practice</dt>
+              <dd>
+                Best practices are a starting point, not a substitute for understanding the
+                problem in front of me.
+              </dd>
+            </div>
+          </dl>
+
+          <h3>Experience</h3>
+          <p>
+            I currently do this work at EDF Renewables — officially as a Solutions Architect,
+            which mostly means I still write code every day and occasionally get to think about
+            the bigger picture too. Day to day that's TypeScript and Python services, Postgres,
+            Docker and Kubernetes, with AWS or GCP underneath depending on the system. Before
+            that, most of my career has been backend and systems engineering across energy,
+            logistics, finance, and government — building and maintaining software that other
+            people depended on to do their jobs.
+          </p>
+          <p>
+            A representative example: I inherited a handful of Excel add-in applications, each
+            maintained separately with its own copy of the same logic. Instead of patching each
+            one in isolation, I built shared abstractions around Excel.js and the common
+            application plumbing — logging, telemetry, testing — and moved the add-ins onto it
+            one at a time. The result was less code overall, fewer places for the same bug to
+            hide, and features that used to take a week landing in a day.
+          </p>
+
+          <h3>Currently exploring</h3>
+          <p>
+            Lately I've been spending a lot of time with coding agents — building with them, and
+            building things for them. A few of the projects above have an
+            <code>AGENTS.md</code> in the repo, because at this point agents are a normal part of
+            how I write software, not a novelty. I'm also poking at local LLMs and document
+            ingestion and retrieval pipelines; <code>pdfcommentscraper2</code> started as one of
+            those experiments before it turned into a tool I actually use.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="wrap wrap--prose">
+          <h2>About</h2>
+          <p>
+            I'm a software engineer based in San Diego. Before this I spent seven years in the
+            United States Marine Corps, which mostly taught me how to stay calm when something is
+            on fire — a skill that transfers to production incidents better than you'd expect.
+          </p>
+          <p>
+            I like learning domains I don't know anything about yet, and then writing the
+            boring-but-critical code that domain ends up running on. I care about the engineers
+            around me being effective, not just my own output — a codebase that's pleasant to
+            work in is a feature, not a nice-to-have.
+          </p>
+          <p>Also, I know how to exit vim.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrap wrap--prose">
+          <h2>Contact</h2>
+          <p>The fastest way to reach me is email. I'm also on GitHub and LinkedIn.</p>
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:wprestonneal@outlook.com">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">wprestonneal@outlook.com</span>
+              </a>
             </li>
             <li>
-              Extremely fast learner and highly adaptable, can rapidly onboard
-              to new domains and technologies.
+              <a href="https://github.com/nealwp">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/nealwp</span>
+              </a>
             </li>
             <li>
-              Wealth of expertise across diverse domains: logistics, finance,
-              energy, government.
-            </li>
-            <li>
-              Well-versed in building cloud-native applications, both in AWS and
-              GCP
-            </li>
-            <li>Extensive experience with relational databases and SQL</li>
-            <li>
-              Highly proficient with Linux-based operating systems and Docker
+              <a href="https://www.linkedin.com/in/nealwp2/">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">in/nealwp2</span>
+              </a>
             </li>
           </ul>
-          <p>
-            What makes me different: I come with a set of non-traditional,
-            tech-adjacent skills. I can wrangle data for insights, I can lead
-            teams as they navigate conflict or uncertainty, and I can move fast
-            in Linux servers and SQL databases. I’m passionate about spreading
-            these abilities to my teammates, helping them maximize their own
-            effectiveness.
-          </p>
-          <p>
-            CompTIA Security+ and DoD IA Level II certified. United States
-            Marine Corps veteran with an inactive Secret security clearance.
-          </p>
-        </section>
-      </main>
-    </div>
-    <p class="text-sm gray">Version <span>v0.0.1</span></p>
-    <p class="font-mono text-sm gray">Site Visits: <span>3,498</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          © <span id="year">2026</span> Preston Neal. Built with HTML, CSS, and a little help from
+          a coding agent — I read every line before it shipped.
+          <a href="https://github.com/nealwp/nealwp.github.io">View source</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
