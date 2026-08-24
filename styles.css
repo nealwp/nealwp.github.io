@@ -45,7 +45,6 @@
   /* --- Radius (restrained) --- */
   --radius-sm: 3px;
   --radius-md: 6px;
-  --radius-lg: 10px;
 
   --header-height: 4rem;
 }
@@ -316,10 +315,10 @@ svg {
   display: block;
   width: min(55vw, 13.75rem);
   height: auto;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center 25%;
-  border-radius: var(--radius-lg);
+  border-radius: 50%;
   border: 1px solid var(--border);
   margin-bottom: var(--space-6);
 }
