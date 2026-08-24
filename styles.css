@@ -320,6 +320,7 @@ svg {
   object-position: center 25%;
   border-radius: 50%;
   border: 1px solid var(--border);
+  margin-inline: auto;
   margin-bottom: var(--space-6);
 }
 
