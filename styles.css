@@ -316,8 +316,6 @@ svg {
   width: min(55vw, 13.75rem);
   height: auto;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center 25%;
   border-radius: 50%;
   border: 1px solid var(--border);
   margin-inline: auto;
@@ -420,6 +418,7 @@ main section h2 {
   font-size: 0.875rem;
   color: var(--text-muted);
   padding-top: 0.2em;
+  transition: color 0.2s ease;
 }
 
 .project-body h3 {
@@ -696,7 +695,6 @@ main section h2 {
 
   .project {
     grid-template-columns: 3.5rem minmax(0, 1fr);
-    transition: background-color 0.2s ease;
   }
 
   .project:hover .project-index {

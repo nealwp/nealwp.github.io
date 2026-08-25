@@ -1,6 +1,6 @@
 # nealwp.github.io
 
-Source for [prestonneal.com](https://nealwp.github.io/), my personal site.
+Source for [nealwp.github.io](https://nealwp.github.io/), my personal site.
 
 Static HTML/CSS with a small amount of vanilla JavaScript for the light/dark
 theme toggle. No build step, no framework, no dependencies. It's served
@@ -15,7 +15,7 @@ script.js               theme toggle, footer year
 hedgehog-noborder.svg   source logo mark (fill="currentColor", inlined in index.html)
 favicon.svg             fixed-color favicon derived from the mark above
 site.webmanifest        PWA metadata
-assets/                 generated PNG icons + Open Graph image
+assets/                 portrait, generated PNG icons + Open Graph image
 ```
 
 ## Local development

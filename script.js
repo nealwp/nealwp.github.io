@@ -7,21 +7,25 @@
   var STORAGE_KEY = "theme";
   var root = document.documentElement;
   var toggle = document.getElementById("theme-toggle");
+  var themeColor = document.getElementById("theme-color");
 
-  function syncToggleState(theme) {
-    if (!toggle) return;
+  function syncThemeState(theme) {
     var isDark = theme === "dark";
+    if (themeColor) {
+      themeColor.setAttribute("content", isDark ? "#121210" : "#faf8f4");
+    }
+    if (!toggle) return;
     toggle.setAttribute("aria-pressed", String(isDark));
     toggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
   }
 
-  syncToggleState(root.getAttribute("data-theme"));
+  syncThemeState(root.getAttribute("data-theme"));
 
   if (toggle) {
     toggle.addEventListener("click", function () {
       var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
-      syncToggleState(next);
+      syncThemeState(next);
       try {
         localStorage.setItem(STORAGE_KEY, next);
       } catch (e) {

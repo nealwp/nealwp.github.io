@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preston Neal | Senior Software Engineer</title>
+    <meta id="theme-color" name="theme-color" content="#faf8f4" />
     <script>
       (function () {
         try {
           var stored = localStorage.getItem("theme");
           var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
           document.documentElement.setAttribute("data-theme", theme);
+          document
+            .getElementById("theme-color")
+            .setAttribute("content", theme === "dark" ? "#121210" : "#faf8f4");
         } catch (e) {
           /* localStorage/matchMedia unavailable; default styles apply */
         }
@@ -20,9 +24,6 @@
       content="Preston Neal is a senior software engineer building backend systems, developer tooling, and platforms. Based in San Diego, open to senior IC roles in backend, platform, and developer experience engineering."
     />
     <link rel="canonical" href="https://nealwp.github.io/" />
-
-    <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#121210" media="(prefers-color-scheme: dark)" />
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
@@ -114,8 +115,8 @@
             class="hero-photo"
             src="assets/portrait.png"
             alt="Portrait of Preston Neal"
-            width="600"
-            height="800"
+            width="480"
+            height="480"
           />
           <p class="hero-sub">
             I like finding the ugly, repetitive problem nobody wants to own, and building the
